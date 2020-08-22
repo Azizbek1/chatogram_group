@@ -1,0 +1,6 @@
+1) birinchi kirish chiqishni qilamiz 
+2) batton boskanda hat boradigan qilamiz
+3) keyin message uchun funksiya yaratish kerak
+4) scroll qilamiz
+5)  Username bilan room olamiz adress bo'yicha 
+6) Join chat

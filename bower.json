@@ -1,0 +1,16 @@
+{
+  "name": "chatNew",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Azizbek1 <46714958+Azizbek1@users.noreply.github.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
