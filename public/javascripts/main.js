@@ -44,11 +44,10 @@ $chat2__form_btn.on('click', (e) => {
 
     // Hat yuboramiz serverga 
     socket.emit("chatMessage", msg)
+    $chat2__form_control.val('')
 
     // scroll Down 
     chat__messages.scrollTop = chat__messages.scrollHeight;
-    $chat2__form_control.val('')
- 
 
 })
 
