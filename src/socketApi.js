@@ -14,7 +14,7 @@ io.on("connection", (socket) => {
 
 // Join chat Room
   socket.on("joinRoom", ({username, room}) => {
-       console.log(username);
+      //  console.log(username);
        const user = userJoin(socket.id, username, room)
        socket.join(user.room)
 

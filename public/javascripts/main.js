@@ -4,6 +4,7 @@ $chat2__form_btn = $('.chat2__form_btn')
 $chat2__form_control = $('.form-control')
 const romName = document.querySelector('.chat__room_name');
 const userList = document.querySelector('.chat_userss');
+const chat__messages = document.querySelector('.chat__messages');
 
 //chat_userss
 const chat_userss = document.querySelector('.chat_userss');
@@ -32,7 +33,7 @@ socket.emit('joinRoom', { username, room })
 
 
 socket.on("message", (data) => {
-    console.log(data);
+    // console.log(data);
     outputMessage(data)
 })
 
@@ -43,8 +44,8 @@ $chat2__form_btn.on('click', (e) => {
     // console.log(msg);
 
     // Hat yuboramiz serverga 
-    socket.emit("chatMessage", msg)
     $chat2__form_control.val('')
+    socket.emit("chatMessage", msg)
 
     // scroll Down 
     chat__messages.scrollTop = chat__messages.scrollHeight;
